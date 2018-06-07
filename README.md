@@ -39,4 +39,10 @@ Username: actor
 Press ok. Wehn you select the conenction movies you will be asked for the pasword of the actor user.
 You can run queries now.
 
-# Set up 
+# Set up the application
+Go to the file settings.py and fill the "mysql_user" and  "mysql_passwd" field with the username(probably root) and the password you gave when setting up the db server.
+Now run the website.py with the command:
+```
+python3 website.py
+```
+Note: Python 3 is required. On your system you might be able to run with "python website.py" as well.
