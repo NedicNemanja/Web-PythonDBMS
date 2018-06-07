@@ -46,3 +46,5 @@ Now run the website.py with the command:
 python3 website.py
 ```
 Note: Python 3 is required. On your system you might be able to run with "python website.py" as well.
+
+![alt text](https://github.com/NedicNemanja/Web-PythonDBMS/blob/master/SqlDB/Capture.PNG)
