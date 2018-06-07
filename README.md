@@ -1,8 +1,8 @@
 # Web-PythonDBMS
-Three layer application for managing a data base. The first layer is a web based user interface, underneath it is the application implemented in python and the final layer is the "movies" data base.
+Three layer application for managing a data base. The first layer is a web based user interface, underneath it is the application implemented in python 3 and the final layer is the "movies" data base.
 
 # Set up MySQL server for "movies" database (for debian based Linux)
-To install mysql server in case you have not already:
+Install mysql server:
 ```
 sudo apt-get install mysql-server mysql-client
 ```
@@ -18,7 +18,7 @@ grant all on movies.* 'actor'@'%' identified by 'actor';
 flush privileges;
 quit
 ```
-Now go to the directory that contains the movie.sql file and import using:
+Now go to the directory that contains the movie.sql file and import it to the DB using:
 ```
 mysql -u root -p movies < movies.sql
 ```
@@ -40,7 +40,7 @@ Press ok. Wehn you select the conenction movies you will be asked for the paswor
 You can run queries now.
 
 # Set up the application
-Go to the file settings.py and fill the "mysql_user" and  "mysql_passwd" field with the username(probably root) and the password you gave when setting up the db server.
+Go to the file settings.py and fill the "mysql_user" and  "mysql_passwd" field with the username(probably root) and the password.
 Now run the website.py with the command:
 ```
 python3 website.py
